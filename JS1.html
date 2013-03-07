@@ -1,18 +1,24 @@
 <html>
 <head>
-<script>
-function displayDate()
-{
-document.getElementById("demo").innerHTML=Date();
-}
-</script>
 </head>
 <body>
 
 <h1>My first JavaScript</h1>
 <h2>Now, I am at Delhi, hahha</h2>
 <p id="demo">this is a paragraph</p>
-<button type="button" onClick="displayDate()">Show Date</button>
+<button type="button" id="button1">Show Date</button>
 
+<script>
+
+function displayDate(){
+	document.getElementById("demo").innerHTML=Date();
+}
+
+document.getElementById("button1").addEventListener("click", function( event ) {
+    // display the current click count inside the clicked div
+    displayDate();
+}, false);
+  
+</script>
 </body>
 </html>
