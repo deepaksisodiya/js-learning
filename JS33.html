@@ -1,0 +1,25 @@
+<html>
+<body>
+
+<input type="button" value="view message" onClick="message1()">
+
+<script>
+var txt = " "
+function message1()
+{
+try
+  {
+   addAlert("Welcome"); 
+  }
+catch(err)
+  {
+   txt = "There was an error on this page.\n\n";
+   txt+= "Error description:" + err.message1 + "\n\n";
+   txt+= "Click OK to continue.\n\n";
+   alert(txt); 
+  }
+}
+</script>
+
+</body>
+</html>

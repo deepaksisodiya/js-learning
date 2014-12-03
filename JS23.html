@@ -1,0 +1,32 @@
+<html>
+<body>
+
+<p>If the time is less than 10:00, you will get a "Good morning" greeting, if not, but the time is less than 20:00, you will get a "Good day" greeting, otherwise you will get a "Good evening" greeting:</p>
+
+<button onclick="myFunction()">Try it</button>
+
+<p id="demo"></p>
+
+<script>
+function myFunction()
+{
+var x = ""
+var time = new Date().getHours();
+if(time<10)
+  {
+   x = "Good morning"
+  }
+else if(time<20)
+  {
+   x = "Good day"
+  }
+else 
+  {
+  x = "Good evening"
+  }
+document.getElementById("demo").innerHTML = x
+}
+</script>
+
+</body>
+</html>

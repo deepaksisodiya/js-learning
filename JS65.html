@@ -1,0 +1,17 @@
+<html>
+<body>
+
+<p id="demo">Click the button to display the number of milliseconds since midnight, January 1, 1970.</p>
+
+<button onClick="myFunction()">Try it</button>
+
+<script>
+function myFunction()
+{
+var d = new Date()
+document.getElementById("demo").innerHTML = d.getTime()
+}
+</script>
+
+</body>
+</html>
